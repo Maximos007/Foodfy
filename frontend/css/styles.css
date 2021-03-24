@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --color-body: #fff;
+  --color-background: #FBDFDB 100%;
+  --color-hover: #D87C72;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto ;
+}
+
+.links {
+  padding: 36.1px 0 30px 0;
+  text-align: left;
+}
+
+.links img {
+  margin: 0 122px 0 0;
+}
+
+.links a {
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: #111111;
+  text-decoration: none;
+  margin: 0 30px;
+}
+
+.links a:hover {
+  color: var(--color-hover);
+  font-weight: bold;
+  transition: font-weight 100ms, color 300ms;
+}
+
+#wrapper {
+  background: var(--color-background);
+  height: 366px;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colunas */
+}
+
+#wrapper .textbox {
+  margin: 117px 60px;
+}
+
+#wrapper .textbox h1 {
+  font-family: Roboto-Bold;
+  font-size: 32px;
+  color: #111111 100%;
+}
+
+#wrapper .textbox p {
+  font-size: 18px;
+  opacity: 0.7;
+  font-family: Roboto-Regular;
+  color: #000000;
+  line-height: 28px;
+  padding-top: 10px;
+}
+
+#wrapper .chef {
+  margin: auto;
+  margin-bottom: 0;
+  
+}
+
+.mostAccessed {
+  
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: left;
+  color: #111111 100%;
+  font-size: 24px;
+  font-family: Roboto-Bold;
+}
+
+.cards {
+  max-width: 940px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card-content {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.title_recipe {
+  font-family: Roboto-Regular;
+  font-size: 18px;
+  color: #111111;
+}
+
+.card_chef {
+opacity: 0.7;
+margin-top: 5px;
+font-family: Roboto-Regular;
+font-size: 14px;
+color: #777777 100%;
+}
+
+
+footer {
+  background: #EEEEEE;
+  border: 1px solid #eee;
+  padding: 16px;
+  margin-top: 4.5%;
+  text-align: center;
+  opacity: 0.8;
+}
+/* body {
+  text-align: center;
+}
+
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  height: 366px;
+  border-radius:30px;
+  background: #FBDFDB;
+}
+#wrapper p {
+  opacity: 0.7;
+font-family: Roboto-Regular;
+font-size: 18px;
+color: #000000;
+line-height: 28px;
+}
+
+h2 {
+  font-family: Roboto-Bold;
+  font-size: 24px;
+  color: #111111;
+
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.layer {
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 50px;
+}
+
+.card-image img{
+  width: 100%;
+  height: 144px;
+  border-radius: 15px;
+}
+
+.card-content {
+  font-family: Roboto-Regular;
+  font-size: 18px;
+  color: #111111;
+}
+
+.card-info {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #777777;
+}
+
+footer {
+  background-color: #EEEEEE;
+  padding : 30px;
+
+}
+
+footer p {
+  color: #999999;
+  font-family: 'Roboto-regular', sans-serif;
+  font-size: 14px;
+}  */
