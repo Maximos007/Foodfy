@@ -4,6 +4,7 @@ const path = require('path');
 const app = express();
 app.use(express.static(path.join(__dirname,'..', 'frontend', 'public', 'css')));
 app.use(express.static(path.join(__dirname,'..', 'frontend', 'public', 'assets')));
+app.use(express.static(path.join(__dirname,'..', 'frontend', 'public', 'script')));
 
 app.get('/', (req, res) => {
 	res.sendFile(path.resolve(__dirname, '..', 'frontend', 'index.html'));
