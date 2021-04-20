@@ -103,6 +103,7 @@ h3 {
 .card-image img {
   width: 100%;
   border-radius: 20px;
+  height: 140px
 }
 
 .card-content {
@@ -239,6 +240,15 @@ footer {
   margin-top: 30px;
   margin-bottom: 15px;
   border-radius: 15px;
+}
+
+/* ========== page-not-found ========== */
+
+.page-not-found {
+  margin-top: 100px;
+  /* display: flex;
+  justify-content: center; */
+
 }
 
 /* body {
