@@ -30,65 +30,20 @@
   </div>
   
   <div class="cards">
-    <div class="card">
-      <div class="card-image">
-        <img src="assets/burger.png" alt="burger">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Triplo bacon burger</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
     
-    <div class="card">
-      <div class="card-image">
-        <img src="assets/doce.png" alt="doce">
+    <% recipes.forEach(function(recipe) { %>
+      
+      <div class="card">
+        <div class="card-image">
+          <img src="<%= recipe.image %> " alt="image <%= recipe.title %>">
+        </div>
+        <div class="card-content">
+          <p class="title_recipe"><%= recipe.title %></p>
+          <p class="card_chef">por <%= recipe.author %></p>
+        </div>
       </div>
-      <div class="card-content">
-        <p class="title_recipe">Docinhos pão-do-céu</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
 
-    <div class="card">
-      <div class="card-image">
-        <img src="assets/espaguete.png" alt="Espaguete">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Espaguete ao alho</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-image">
-        <img src="assets/lasanha.png" alt="Lasanha">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Lasanha mac n’ cheese</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-image">
-        <img src="assets/pizza.png" alt="Pizza">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Pizza 4 estações</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-image">
-        <img src="assets/asinhas.png" alt="asinha">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Asinhas de frango ao barbecue</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
+      <% }); %>   
 
   </div>
 
