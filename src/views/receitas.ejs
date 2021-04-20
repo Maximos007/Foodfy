@@ -16,146 +16,25 @@
     <%- include('parts/page-header.ejs') %> 
 
   <div class="cards">
-    <div class="card" id="burger.png">
-      <div class="card-image">
-        <img src="assets/burger.png" alt="burger">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Triplo bacon burger</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
 
-    <div class="card" id="doce.png">
-      <div class="card-image">
-        <img src="assets/doce.png" alt="doce">
-      </div>assets/
-      <div class="card-content">
-        <p class="title_recipe">Docinhos pão-do-céu</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
+    <% recipes.forEach(function(recipe) { %>
 
-    <div class="card" id="espaguete.png">
-      <div class="card-image">
-        <img src="assets/espaguete.png" alt="Espaguete">
+      <div class="card" id="burger.png">
+        <div class="card-image">
+          <img src="<%= recipe.image %> " alt="image <%= recipe.title %>">
+        </div>
+        <div class="card-content">
+          <p class="title_recipe"><%= recipe.title %></p>
+          <p class="card_chef">por <%= recipe.author %></p>
+        </div>
       </div>
-      <div class="card-content">
-        <p class="title_recipe">Espaguete ao alho</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
 
-    <div class="card" id="lasanha.png">
-      <div class="card-image">
-        <img src="assets/lasanha.png" alt="Lasanha">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Lasanha mac n’ cheese</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card" id="pizza.png">
-      <div class="card-image">
-        <img src="assets/pizza.png" alt="Pizza">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Pizza 4 estações</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card" id="asinhas.png">
-      <div class="card-image">
-        <img src="assets/asinhas.png" alt="asinha">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Asinhas de frango ao barbecue</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card" id="burger.png">
-      <div class="card-image">
-        <img src="assets/burger.png" alt="burger">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Triplo bacon burger</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card" id="doce.png">
-      <div class="card-image">
-        <img src="assets/doce.png" alt="doce">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Docinhos pão-do-céu</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card" id="espaguete.png">
-      <div class="card-image">
-        <img src="assets/espaguete.png" alt="Espaguete">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Espaguete ao alho</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card" id="lasanha.png">
-      <div class="card-image">
-        <img src="assets/lasanha.png" alt="Lasanha">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Lasanha mac n’ cheese</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card" id="pizza.png">
-      <div class="card-image">
-        <img src="assets/pizza.png" alt="Pizza">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Pizza 4 estações</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
-
-    <div class="card" id="asinhas.png">
-      <div class="card-image">
-        <img src="assets/asinhas.png" alt="asinha">
-      </div>
-      <div class="card-content">
-        <p class="title_recipe">Asinhas de frango ao barbecue</p>
-        <p class="card_chef">por Jorge Relato</p>
-      </div>
-    </div>
+      <% }); %> 
 
   </div>
 
   </div>
 
-  <div class="modal-overlay">
-    <div class="modal">
-      <a class="close-modal">
-        <i class="material-icons">close</i>
-      </a>
-
-      <div class="modal-content">
-        <!-- video aqui -->
-
-        <img src="" alt="">
-        <p class="title-modal"></p>
-        <p class="chef-modal"></p>
-      </div>
-    </div>
-    
-  </div>
 
   <%- include('parts/page-footer.ejs') %> 
 
