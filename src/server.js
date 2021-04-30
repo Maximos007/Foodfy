@@ -3,6 +3,8 @@ const server = express();
 const routes = require('./routes');
 
 server.set('view engine', 'ejs');
+server.use(express.json());
+server.use(express.urlencoded({ extended: true }));
 
 // habilitar arquivos statics
 server.use(express.static('public'));
