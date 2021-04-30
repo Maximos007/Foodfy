@@ -1,10 +1,9 @@
-const modalOverlay = document.querySelector('.modal-overlay');
 const cards = document.querySelectorAll('.card');
 
 for (let card of cards){
 	card.addEventListener ('click' , function (){
-		const imageId = card.getAttribute('id');
-		window.location.href = '/';
+		const recipeIndex = card.getAttribute('id');
+		window.location.href = `/recipes/${recipeIndex}`;
 
 		// const title = card.querySelector('.title_recipe').innerText; // atribui o texto que contém 
 		// const author = card.querySelector('.card_chef').innerText;
