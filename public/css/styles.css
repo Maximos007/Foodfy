@@ -98,6 +98,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  cursor: pointer;
 }
 
 .card-image img {
@@ -185,71 +186,17 @@ footer {
   line-height: 28px;
 }
 
-/* ========== MODAL ========== */
-.modal-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  opacity: 0;
-  visibility: hidden;
+/* ========== Recitas ========== */
+
+#wrapper-receitas{
+  height: 280px;
 }
 
-.modal {
-  background-color: white;
-  max-width: 700px;
-  max-height: 800px;
-  margin: 20vh auto;
-  position: relative;
-  border-radius: 20px;
-}
-
-.modal .close-modal {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  cursor: pointer;
-
-}
-
-/* ========== MODAL.active ========== */
-
-.modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.title-modal {
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.chef-modal{
-  opacity: 0.8;
-  padding-bottom: 30px;
-  padding-top: 5px;
-}
-
-.modal-content {
-  text-align: center;
-}
-.modal-content img {
-  max-width: 700px; /*largura*/
-  max-height: 300px; /*altura*/
-  margin-top: 30px;
-  margin-bottom: 15px;
+#wrapper-receitas img{
   border-radius: 15px;
 }
 
-/* ========== page-not-found ========== */
 
-.page-not-found {
-  margin-top: 100px;
-  /* display: flex;
-  justify-content: center; */
-
-}
 
 /* body {
   text-align: center;
