@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
+
     <div class="container">
       <%- include('parts/page-header.ejs') %>
 
@@ -19,18 +20,34 @@
 
           <div class="Ingredientes">
             <div class="wraper-content">
+
               <ul>
 
-                  <li> <%= recipe.ingredients %> </li>
+                <% recipe.ingredients.forEach(function(recipe) { %>
+                  <li> <%= recipe %> </li>
+                <% }); %>
 
               </ul>
+
             </div>
           </div>
+
+          <div class="wraper-preparation">
+            <div class="title">
+              <h2>Modo de preparo</h2>
+            </div>
+
+            <% recipe.preparation.forEach(function(recipe) { %>
+              <p><%= recipe %></p>
+            <% }); %>
+
+          </div>
+
         </div>
       </div>
     </div>
 
-    <%- include('parts/page-footer.ejs') %>
+    <!-- <%- include('parts/page-footer.ejs') %> -->
 
     <script src="/script/scripts.js"></script>
   </body>
