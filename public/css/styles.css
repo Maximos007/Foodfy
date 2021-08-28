@@ -23,9 +23,14 @@ body {
   margin: 0 auto ;
 }
 
+header {
+  display: flex;
+}
+
 .links {
+  display: flex;
+  align-items: center;
   padding: 36.1px 0 30px 0;
-  text-align: left;
 }
 
 .links img {
@@ -131,9 +136,12 @@ footer {
   background: var(--color-footer);
   border: 1px solid #eee;
   padding: 16px;
-  margin-top: 4.5%;
+  margin-top: 330px;
   text-align: center;
   opacity: 0.8;
+
+  position: relative;
+
 }
 /* ========== Page-Sobre ========== */
 
