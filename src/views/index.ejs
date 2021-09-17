@@ -13,39 +13,39 @@
 
     <%- include('parts/page-header.ejs') %> 
 
-  <div id="wrapper">
-    <div class="textbox">
-      <h1>As melhores receitas</h1>
-      <p>Aprenda a construir os melhores pratos
-        com receitas criadas por profissionais
-        do mundo inteiro</p>
-    </div>
-    <div class="chef">
-      <img src="assets/chef.png" alt="Chefe">
-    </div>
-  </div>
-
-  <div class="mostAccessed">
-    <h3>Mais acessadas</h3>
-  </div>
-  
-  <div class="cards">
-    
-    <% recipes.forEach(function(recipe, i) { %>
-      
-      <div class="card" id="<%= i %>">
-        <div class="card-image">
-          <img src="<%= recipe.image %> " alt="image <%= recipe.title %>">
-        </div>
-        <div class="card-content">
-          <p class="title_recipe"><%= recipe.title %></p>
-          <p class="card_chef">por <%= recipe.author %></p>
-        </div>
+    <section id="wrapper">
+      <div class="textbox">
+        <h1>As melhores receitas</h1>
+        <p>Aprenda a construir os melhores pratos
+          com receitas criadas por profissionais
+          do mundo inteiro</p>
       </div>
+      <div class="chef">
+        <img src="assets/chef.png" alt="Chefe">
+      </div>
+    </section>
+
+    <div class="mostAccessed">
+      <h3>Mais acessadas</h3>
+    </div>
+  
+    <section class="cards">
       
+      <% recipes.forEach(function(recipe, i) { %>
+        
+        <div class="card" id="<%= i %>">
+          <div class="card-image">
+            <img src="<%= recipe.image %> " alt="image <%= recipe.title %>">
+          </div>
+          <div class="card-content">
+            <p class="title_recipe"><%= recipe.title %></p>
+            <p class="card_chef">por <%= recipe.author %></p>
+          </div>
+        </div>
+        
       <% }); %>   
 
-  </div>
+    </section>
 
   </div>
 
