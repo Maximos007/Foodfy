@@ -12,13 +12,13 @@
     <div class="container">
       <%- include('parts/page-header.ejs') %>
 
-      <div id="wrapper-receitas">
+      <section id="wrapper-receitas">
         <img src="<%= recipe.image %> " alt="image <%= recipe.title %>">
         <div class="title">
           <h1><%= recipe.title %></h1>
           <p>por <%= recipe.author %></p>
 
-          <div class="Ingredientes">
+          <section class="Ingredientes">
             <div class="wraper-content">
 
               <ul>
@@ -30,9 +30,9 @@
               </ul>
 
             </div>
-          </div>
+          </section>
 
-          <div class="wraper-preparation">
+          <section class="wraper-preparation">
             <div class="title">
               <h2>Modo de preparo</h2>
             </div>
@@ -41,10 +41,10 @@
               <p><%= recipe %></p>
             <% }); %>
 
-          </div>
+            </section>
 
         </div>
-      </div>
+      </section>
     </div>
 
     <!-- <%- include('parts/page-footer.ejs') %> -->
