@@ -15,23 +15,23 @@
 
     <%- include('parts/page-header.ejs') %> 
 
-  <div class="cards">
+    <div class="cards">
 
-    <% recipes.forEach(function(recipe, i) { %>
+      <% recipes.forEach(function(recipe, i) { %>
 
-      <div class="card" id="<%= i %> ">
-        <div class="card-image">
-          <img src=" <%= recipe.image %> " alt="image <%= recipe.title %>">
+        <div class="card" id="<%= i %> ">
+          <div class="card-image">
+            <img src=" <%= recipe.image %> " alt="image <%= recipe.title %>">
+          </div>
+          <div class="card-content">
+            <p class="title_recipe"><%= recipe.title %></p>
+            <p class="card_chef">por <%= recipe.author %></p>
+          </div>
         </div>
-        <div class="card-content">
-          <p class="title_recipe"><%= recipe.title %></p>
-          <p class="card_chef">por <%= recipe.author %></p>
-        </div>
-      </div>
 
-      <% }); %> 
+        <% }); %> 
 
-  </div>
+    </div>
 
   </div>
 
